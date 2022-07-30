@@ -108,8 +108,10 @@ img {
   position:relative;
   justify-content: space-evenly;
   text-align: center;
-  padding: 10px;
-  border:solid;
+  padding: 15px;
+  border: 1px solid rgba(233, 226, 226, 0.765);
+  border-radius: 50px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   margin:5px;
   width:500px;
   height:550px;
@@ -119,10 +121,11 @@ img {
 .recipe-card-title {
   color: white;
   background-color: teal;
-  padding:5px;
+  padding: 0px 5px 5px 5px;
   font-family: 'Alata', sans-serif;
   font-variant: all-small-caps;
-  font-size: 20px;
+  
+  font-size: 30px;
   letter-spacing: 0.2em;
   
 }
@@ -151,6 +154,12 @@ img {
   
 }
 
+.smaller-img {
+  width: 60%;
+  height: auto;
+  margin-top: 0px;
+}
+
 .upload-btn {
   background-color:rgb(59, 176, 199);
   color:white;
@@ -173,6 +182,7 @@ img {
 
 .cb-card-sm {
   border-radius: 10px;
+
 }
 
 .cb-card {
