@@ -26,6 +26,9 @@ router.get("/cookbook", withAuth, async (req, res) => {
   }
 });
 
+
+
+
 router.get("/", async (req, res) => {
   try {
     console.log(req.session.loggedIn);
@@ -45,6 +48,9 @@ router.get("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
+
 
 router.get("/add-recipe", withAuth, async (req, res) => {
   try {
@@ -232,14 +238,24 @@ router.get("/recipes/:id", withAuth, async (req, res) => {
   }
 });
 
+
+
+
+
+
+
+
 router.get("/login", (req, res) => {
   if (req.session.loggedIn) {
     res.redirect("/");
     return;
   }
-
   res.render("login");
 });
+
+
+
+
 
 router.post("/login", async (req, res) => {
   try {

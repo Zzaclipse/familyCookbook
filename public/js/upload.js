@@ -37,12 +37,7 @@ var myCropWidget = cloudinary.createUploadWidget(
     uploadPreset: "etukbfiu",
     cropping: true,
     sources: ["local", "url"],
-    // preBatch: (cb, data) => {
-    //     imgFileName = data.files[0].name;
-    //     console.log(imgFileName);
-    //     // add post route to update database with imgFileName for this recipe
 
-    //   },
   },
   (error, result) => {
     if (result.event === "success") {

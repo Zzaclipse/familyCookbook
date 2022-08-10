@@ -1,82 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript">  </script>
-    <link rel="stylesheet" href="index.css">
-    <title>Add your recipe</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript">  </script>
+  <link rel="stylesheet" href="index.css">
+  <title>Add your recipe</title>
 </head>
+
 <body>
   <div class="row">
     <div class="col-12">
-      
-    <div class="add-recipe-vp">
-      <div>
-        <form action="#">
-    <input
-    id="recipe-title"
-      class="recipe-title"
-      placeholder="recipe name"
-      maxlength="28"
-      type="text"/><br>
-        <textarea id="description" class="note-textarea description" placeholder="description of your recipe"></textarea>
-    </input><br>
-   
-    <div class="dropdown regular-font">
-      <select id="category" class="dropbtn-block dropdown" id="dropdownMenubutton">select a category
-        <div class="dropdown-content" >
-          <option>select a category</option>
-          <option value="breakfast">breakfast</option>
-          <option value="mains">mains</option>
-          <option value="sides">sides</option>
-          <option value="desserts">desserts</option>
-          </select>
+
+      <div class="add-recipe-vp">
+        <div>
+          <form action="#">
+            <input id="recipe-title" class="recipe-title" placeholder="recipe name" maxlength="28" type="text" /><br>
+            <textarea id="description" class="note-textarea description"
+              placeholder="description of your recipe"></textarea>
+            </input><br>
+
+            <div class="dropdown regular-font">
+              <select id="category" class="dropbtn-block dropdown" id="dropdownMenubutton">select a category
+                <div class="dropdown-content">
+                  <option>select a category</option>
+                  <option value="breakfast">breakfast</option>
+                  <option value="mains">mains</option>
+                  <option value="sides">sides</option>
+                  <option value="desserts">desserts</option>
+              </select>
+            </div>
         </div>
-      </div>
-      <br>
-
-
-      
-      <br>
-      <div class="row">
-        <div class="col-2"></div>
-<div class="col-md-4 col-sm-12 regular-font">
-      <img src="../assets/upload_photo_placeholder.webp" class="upload-img" id="img-link"><br>
-      {{!-- CLOUDINARY WIDGET/LINK --}}
-      <button type="upload" class="btn btn-md add-photo-btn" id="upload_widget">Add photo</button><br>
-  
-</div>
-
-      <div class="col-md-4 col-sm-12 regular-font">
-        <br><br>
-      <u>Ingredients:</u>
-        <span class="responsive">
-        <input type="text" class="note-textarea" style="text-align:left;" id="add-ingredient" name="add-ingredient" placeholder="Enter ingredient">
-        <button type="button" class="btn btn-sm recipe-btn" id="ingredient-button">+</button></span>
-        <br>
-        <div><ul id="ingredient-text-area"></ul></div>
         <br>
 
-        <u>Directions:</u>
-        <input type="text" class="note-textarea" style="text-align:left;" id="add-step" name="step" placeholder="Enter each step">
-        <button type="button" class="btn btn-sm recipe-btn" id="step-button">+</button>
-        <br>
-        <div><ol id="step-text-area"></ol></div>
-        <br> 
-         
- </div>
-        <div class="col-2"></div>
-       <div class="col-12">
-<div class="col-md">
-<button type="upload" class="btn btn-md upload-btn regular-font" id="upload-button">Upload Recipe</button>
-        </div>
-      </form>
-      </div>
-      {{!-- <div class="col-2"></div> --}}
 
-    <script src="/js/upload.js"></script>
-    
+
+        <br>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-md-4 col-sm-12 regular-font">
+            <img src="../assets/upload_photo_placeholder.webp" class="upload-img" id="img-link"><br>
+            {{!-- CLOUDINARY WIDGET/LINK --}}
+            <button type="upload" class="btn btn-md add-photo-btn" id="upload_widget">Add photo</button><br>
+
+          </div>
+
+          <div class="col-md-4 col-sm-12 regular-font">
+            <br><br>
+            <u>Ingredients:</u>
+            <span class="responsive">
+              <input type="text" class="note-textarea" style="text-align:left;" id="add-ingredient"
+                name="add-ingredient" placeholder="Enter ingredient">
+              <button type="button" class="btn btn-sm recipe-btn" id="ingredient-button">+</button></span>
+            <br>
+            <div>
+              <ul id="ingredient-text-area"></ul>
+            </div>
+            <br>
+
+            <u>Directions:</u>
+            <input type="text" class="note-textarea" style="text-align:left;" id="add-step" name="step"
+              placeholder="Enter each step">
+            <button type="button" class="btn btn-sm recipe-btn" id="step-button">+</button>
+            <br>
+            <div>
+              <ol id="step-text-area"></ol>
+            </div>
+            <br>
+
+          </div>
+          <div class="col-2"></div>
+          <div class="col-12">
+            <div class="col-md">
+              <button type="upload" class="btn btn-md upload-btn regular-font" id="upload-button">Upload Recipe</button>
+            </div>
+            </form>
+          </div>
+          {{!-- <div class="col-2"></div> --}}
+
+          <script src="/js/upload.js"></script>
+
 </body>
+
 </html>
