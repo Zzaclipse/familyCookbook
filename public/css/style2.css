@@ -312,7 +312,7 @@ select:active {
 #sign-up-section {
   position:absolute;
   z-index: 1;
-  margin:15%;
+  margin:3vh 0vw;
   border:solid;
   border-radius:50px;
   border-color: lightgray;
@@ -374,6 +374,12 @@ select:active {
 
 .page-title-login {
   text-align:center;
+  font-size: 6vh;
+}
+
+.page-title-signup {
+  text-align:center;
+  font-size: 5vh;
 }
 
 .login-cb-name:hover {
@@ -405,12 +411,19 @@ select:active {
   z-index: 2;
 }
 .marquee span {
+  
   list-style: none;
   height: 100%;
+  width: auto;
   display: flex;
   position:fixed;
   left: 100%;
   animation: scrolling 30s linear infinite;
+}
+
+.marquee img {
+  object-fit: contain;
+  width: auto;
 }
 
 @keyframes scrolling {
